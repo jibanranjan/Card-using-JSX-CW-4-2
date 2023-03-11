@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>card using jsx</title>
+</head>
+<body style="background-color: blanchedalmond;">
+    <div id="root"></div>
+    <script type="text/babel">
+                       
+
+                    //    {styles}
+
+                              let carddivStyle ={ width:"400px",
+                                                  height:"450px",
+                                                  backgroundColor:"white",
+                                                  marginLeft:"450px",
+                                                  marginTop:"120px",
+                                                  boxShadow:"0 0 20px black",
+                                                  borderRadius:"15px",
+                                                
+                                              }
+
+                               let imgStyle ={  width:"400px",
+                                                height:"250px",
+                                                borderRadius: "4% 4% 0% 0% ",
+                                            } 
+                                    
+                               let nameh1Style = { marginLeft:"70px",
+                                                   marginTop:"2px",
+                                                   fontWeight:"50"
+                                                }
+
+
+                                let namepara = {  marginLeft:"130px",
+                                                   marginTop:"-20px",
+                                                   fontWeight:"50",
+                                                   color:"rgb(112,112,112)",
+
+                                }  
+                                
+                                let noh2div = { display:"flex",
+                                                gap:"80px",
+                                                marginLeft:"48px"
+                                }
+
+                                let flwp ={ display:"flex",
+                                                gap:"65px",
+                                                marginLeft:"47px",
+                                                marginTop:"-32px",
+                                                color:"rgb(112,112,112)",
+
+                                }
+
+
+                                let dotdiv = { marginLeft:"350px",
+                                               marginTop:"-400px",
+                                               color:"white",
+                                            
+                                               
+
+                                           
+
+                                }
+
+
+                                let icon ={   height:"30px", 
+                                              width:"35px",
+                                              backgroundColor:"rgb(225,58,157)",
+                                              color:"white",
+                                              fontSize:"18px",
+                                              border:"none", 
+                                              borderRadius:"10px",
+                                              cursor:"pointer",
+                                              marginLeft:"5px",
+                                              marginBottom:"30%",
+                                              marginTop:"-10%"
+                                              
+
+                                }
+
+                                let lowerdiv= {   width:"400px",
+                                                  height:"120px",
+                                                  backgroundColor:"rgb(220,220,220)",
+                                                  marginLeft:"0px",
+                                                  marginTop:"103px",
+                                                  borderRadius:"0% 0% 10% 10% "
+
+                                }
+
+                                
+
+                                
+
+                            
+
+
+
+
+
+
+
+
+
+                // {div tags}
+
+     var carddiv = <div style={carddivStyle}>
+                
+                    <div> <img style={imgStyle} src="dp.jpg" alt="dp"/>
+                     </div>
+
+                     <h1 style={nameh1Style}>Jibanranjan Debata</h1>
+                     <p style={namepara}>Full Stack Developer</p>
+
+                     <div style={noh2div}> <h2>128</h2>
+                           <h2>346</h2>
+                           <h2>8937</h2>
+                     </div>
+
+
+
+                     <div style={flwp}> <p>shoot</p>
+                        <p>following</p>
+                        <p>followers</p>
+                        
+                    </div>
+
+
+
+                    <div> <ul style={dotdiv}>
+                               <li> </li>
+                               <li> </li>
+                               <li> </li>
+                          </ul>
+                    </div>
+
+
+                    <button style={icon}>+</button>
+
+
+
+                    <div style={lowerdiv}> </div>
+
+
+
+
+    </div>
+
+                   
+
+
+ReactDOM.render(carddiv, document.getElementById("root"))
+
+    </script>
+</body>
+</html>
